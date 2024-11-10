@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Booking Records</title>
+    <link rel="stylesheet" href="../css/Record.css">
+</head>
+<body>
+    <!-- Top Bar Section -->
+    <div class="top-bar">
+        <span class="title">ประวัติการจองห้อง (Booking Records)</span>
+        
+    </div>
+
+    <!-- Sidebar with taskbar -->
+        <div class="sidebar" style="top: 50px;">
+            <div class="sidebar-item">
+                <a href="Menu.html">
+                    <img src="../images/Menu.png" alt="Home Icon" class="icon">
+                </a>
+            </div>
+            <div class="sidebar-item active">
+                <a href="Available.html">
+                    <img src="../images/search.png" alt="Search Icon" class="icon">
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="Reserve.html">
+                    <img src="../images/Reserve.png" alt="Add Icon" class="icon">
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="Record.html">
+                    <img src="../images/Archive.png" alt="Archive Icon" class="icon">
+                </a>
+            </div>
+            <div class="sidebar-item">
+                <a href="Approval.html">
+                    <img src="../images/Approval.png" alt="Check Icon" class="icon">
+                </a>
+            </div>
+            <div class="sidebar-item bottom">
+                <a href="../Index.html">
+                    <img src="../images/logout.png" alt="Sign-out Icon" class="icon" >
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Tab Section -->
+        <div class="tab-section">
+            <button class="tab active" onclick="showRecords('booking')">ประวัติการจอง (Booking Records)</button>
+            <button class="tab" onclick="showRecords('approval')">ประวัติการอนุมัติ (Approval Records)</button>
+        </div>
+
+        <!-- Booking Records -->
+        <section class="buttons-section"> <!-- Example the Record Modification -->
+            <div class="button-box" onclick="navigateTo('Record2.html')">
+            <div class="record">
+                <div class="record-id">23</div>
+                <div class="record-info">
+                    <p>ห้องปฏิบัติการเคมี (Chemical Science Laboratory)</p>
+                    <p>S3 401 | 43 คน (People)</p>
+                </div>
+                <div class="record-status in-process">In Process</div>
+            </div>
+        </section>
+        <div id="booking" class="records-section">
+            <div class="record">
+                <div class="record-id">44</div>
+                <div class="record-info">
+                    <p>ห้องปฏิบัติการฟิสิกส์ (Physics Laboratory)</p>
+                    <p>S3 402 | 30 คน (People)</p>
+                </div>
+                <div class="record-status denied">Denied</div>
+            </div>
+            <div class="record">
+                <div class="record-id">12</div>
+                <div class="record-info">
+                    <p>ห้องปฏิบัติการวิทยาศาสตร์เครื่องสำอาง (Cosmetic Science Laboratory)</p>
+                    <p>S3 403 | 25 คน (People)</p>
+                </div>
+                <div class="record-status in-process">In Process</div>
+            </div>
+            <div class="record">
+                <div class="record-id">17</div>
+                <div class="record-info">
+                    <p>ห้องปฏิบัติการวิศวกรรมวัสดุ (Materials Engineering Laboratory)</p>
+                    <p>S3 404 | 34 คน (People)</p>
+                </div>
+                <div class="record-status in-process">In Process</div>
+            </div>
+            <div class="record">
+                <div class="record-id">45</div>
+                <div class="record-info">
+                    <p>ห้องปฏิบัติการชีววิทยา (ฺBiology Laboratory)</p>
+                    <p>S3 405 | 25 คน (People)</p>
+                </div>
+                <div class="record-status denied">Denied</div>
+            </div>
+            <div class="record">
+                <div class="record-id">18</div>
+                <div class="record-info">
+                    <p>ห้องปฏิบัติการคณิตศาสตร์ (Mathematics Laboratory)</p>
+                    <p>S3 406 | 20 คน (People)</p>
+                </div>
+                <div class="record-status approved">Approved</div>
+            </div>
+            <div class="record">
+                <div class="record-id">24</div>
+                <div class="record-info">
+                    <p>ห้องปฏิบัติการคอมพิวเตอร์ (Computer Laboratory)</p>
+                    <p>S3 407 | 47 คน (People)</p>
+                </div>
+                <div class="record-status approved">Approved</div>
+            </div>
+            <!-- Additional booking records can be added here -->
+        </div>
+
+        <!-- Approval Records (Initially hidden) -->
+        <div id="approval" class="records-section" style="display: none;">
+            <div class="record">
+                <div class="record-id">101</div>
+                <div class="record-info">
+                    <p>ห้องปฏิบัติการชีววิทยา (Biology Laboratory)</p>
+                    <p>S3 403 | 25 คน (People)</p>
+                </div>
+                <div class="record-status approved">Approved</div>
+            </div>
+            <div class="record">
+                <div class="record-id">102</div>
+                <div class="record-info">
+                    <p>ห้องปฏิบัติการคณิตศาสตร์ (Mathematics Laboratory)</p>
+                    <p>S3 404 | 20 คน (People)</p>
+                </div>
+                <div class="record-status in-process">In Process</div>
+            </div>
+            <!-- Additional approval records can be added here -->
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="../javascript/Record.js"></script>
+</body>
+</html>

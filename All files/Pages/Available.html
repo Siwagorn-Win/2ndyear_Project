@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Room</title>
+    <link rel="stylesheet" href="../css/available.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        ตรวจสอบห้องว่าง (available Room)
+    </div>
+
+    <!-- Filter Section -->
+    <div class="container">
+        <div class="form-group">
+            <label for="room-type">ประเภทห้อง (Room type)</label>
+            <input type="text" id="room-type" placeholder="ชื่อห้อง / Room name">
+        </div>
+<!-- Start Date with Calendar Icon -->
+<div class="form-group">
+    <label for="start-date">เริ่มต้น (Start)</label>
+    <div class="input-wrapper">
+      <input type="text" id="start-date" placeholder="DD/MM/YY" data-input>
+      <img src="../images/Calendar.png" alt="Calendar Icon" class="calendar-icon">
+    </div>
+  </div>
+  <!-- End Date with Calendar Icon -->
+  <div class="form-group">
+    <label for="end-date">สิ้นสุด (Stop)</label>
+    <div class="input-wrapper">
+      <input type="text" id="end-date" placeholder="DD/MM/YY" data-input>
+      <img src="../images/Calendar.png" alt="Calendar Icon" class="calendar-icon">
+    </div>
+  </div>
+    </div>
+
+   <!-- Sidebar -->
+   
+   <div class="sidebar" style="top: 50px;">
+    <div class="sidebar-item">
+        <a href="Menu.html">
+            <img src="../images/Menu.png" alt="Home Icon" class="icon">
+        </a>
+    </div>
+    <div class="sidebar-item active">
+        <a href="Available.html">
+            <img src="../images/search.png" alt="Search Icon" class="icon">
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a href="Reserve.html">
+            <img src="../images/Reserve.png" alt="Add Icon" class="icon">
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a href="Record.html">
+            <img src="../images/Archive.png" alt="Archive Icon" class="icon">
+        </a>
+    </div>
+    <div class="sidebar-item">
+        <a href="Approval.html">
+            <img src="../images/Approval.png" alt="Check Icon" class="icon">
+        </a>
+    </div>
+    <div class="sidebar-item bottom">
+        <a href="../Index.html">
+            <img src="../images/logout.png" alt="Sign-out Icon" class="icon" >
+        </a>
+    </div>
+</div>
+   
+    <!-- Room List -->
+    <div class="room-list">
+        <!-- Room Card 1 -->
+        <div class="room-card">
+            <div class="room-number">23</div>
+            <div class="room-details">
+                <p>ห้องปฏิบัติการเคมี (Cosmetic Science Laboratory)</p>
+                <p>S3 401 | 43 คน (people)</p>
+            </div>
+            <div class="status in-use">In use</div>
+        </div>
+
+        <!-- Room Card 2 -->
+        <div class="room-card">
+            <div class="room-number">155</div>
+            <div class="room-details">
+                <p>ห้องปฏิบัติการเคมี (Cosmetic Science Laboratory)</p>
+                <p>S3 415 | 43 คน (people)</p>
+            </div>
+            <div class="status in-use">In use</div>
+        </div>
+
+        <!-- Room Card 3 -->
+        <div class="room-card">
+            <div class="room-number">304</div>
+            <div class="room-details">
+                <p>ห้องปฏิบัติการเคมี (Cosmetic Science Laboratory)</p>
+                <p>S3 417 | 43 คน (people)</p>
+            </div>
+            <div class="status process">Process</div>
+        </div>
+
+        <!-- Room Card 4 -->
+        <div class="room-card">
+            <div class="room-number">-</div>
+            <div class="room-details">
+                <p>ห้องปฏิบัติการเคมี (Cosmetic Science Laboratory)</p>
+                <p>S3 419 | 43 คน (people)</p>
+            </div>
+            <div class="status free">Free</div>
+        </div>
+
+        <!-- Room Card 5 -->
+        <div class="room-card">
+            <div class="room-number">18</div>
+            <div class="room-details">
+                <p>ห้องปฏิบัติการเคมี (Cosmetic Science Laboratory)</p>
+                <p>S3 422 | 43 คน (people)</p>
+            </div>
+            <div class="status in-use">In use</div>
+        </div>
+    </div>
+
+</body>
+</html>

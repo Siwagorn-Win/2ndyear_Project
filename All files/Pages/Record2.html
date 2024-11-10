@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Booking Records</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/Record2.css">
+</head>
+<body>
+    <!-- Top Bar Section -->
+    <div class="top-bar">
+        <span class="title">ประวัติการจองห้อง (Booking Records)</span>
+        <span class="notification-icon"><i class="fa fa-bell"></i></span>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" style="top: 50px;">
+        <div class="sidebar-item">
+            <a href="Menu.html">
+                <img src="../images/Menu.png" alt="Home Icon" class="icon">
+            </a>
+        </div>
+        <div class="sidebar-item active">
+            <a href="Available.html">
+                <img src="../images/search.png" alt="Search Icon" class="icon">
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Reserve.html">
+                <img src="../images/Reserve.png" alt="Add Icon" class="icon">
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Record.html">
+                <img src="../images/Archive.png" alt="Archive Icon" class="icon">
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Approval.html">
+                <img src="../images/Approval.png" alt="Check Icon" class="icon">
+            </a>
+        </div>
+        <div class="sidebar-item bottom">
+            <a href="../Index.html">
+                <img src="../images/logout.png" alt="Sign-out Icon" class="icon" >
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content">
+            <div class="form-section">
+                <h2>แบบฟอร์มขอใช้ห้องปฏิบัติการนอกเวลาราชการ (Laboratory requisition form in non-working hours.)</h2>
+                <label for="studentID">รหัสนักศึกษา/รหัสพนักงาน (Student/Staff ID):</label>
+                <input type="text" id="studentID" name="studentID" value="6631503117" disabled>
+
+                <label for="name">ชื่อ-นามสกุล (Name-Surname):</label>
+                <input type="text" id="name" name="name" value="นายดิ้ดดี้ พิทักษ์สินากร" disabled>
+
+                <label for="phone">หมายเลขติดต่อ (Phone number):</label>
+                <input type="tel" id="phone" name="phone" value="0123456789" disabled>
+
+                <label for="department">หน่วยงาน (School/Department):</label>
+                <input type="text" id="department" name="department" value="School of Applied Digital Technology" disabled>
+            </div>
+
+            <div class="form-section">
+                <h2>ผู้ใช้บริการเพิ่มเติม (Additional Clients)</h2>
+                <div class="client-row">
+                    <div class="client1">
+                        <label for="clientID">ID:</label>
+                        <input type="text" id="clientID" name="clientID" value="6631503040" disabled>
+                        <label for="clientName">ชื่อ (Name):</label>
+                        <input type="text" id="clientName" name="clientName" value="สดุยะ คาเครุคุง" disabled>
+                    </div>
+
+                    <div class="client2">
+                        <label for="clientID">ID:</label>
+                        <input type="text" id="clientID" name="clientID" value="6631503043" disabled>
+                        <label for="clientName">ชื่อ (Name):</label>
+                        <input type="text" id="clientName" name="clientName" value="สุภวัตร ชัยโย" disabled>
+                    </div>
+
+                    <div class="client3">
+                        <label for="clientID">ID:</label>
+                        <input type="text" id="clientID" name="clientID" value="6631503042" disabled>
+                        <label for="clientName">ชื่อ (Name):</label>
+                        <input type="text" id="clientName" name="clientName" value="ศุภาวรรณ กองทัพอากาศ" disabled>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>ความประสงค์ในการใช้ห้องปฏิบัติการ (Request to use laboratory for...)</h2>
+                <label for="purpose">ความประสงค์ (Purpose):</label>
+                <input type="text" id="purpose" name="purpose" value="งานวิจัย" disabled>
+
+                <label for="topic">หัวข้อ (Topic):</label>
+                <input type="text" id="topic" name="topic" value="ยาดมสมุนไพร" disabled>
+
+                <label for="advisor">อาจารย์ที่ปรึกษา (Advisor/Lecturer):</label>
+                <input type="text" id="advisor" name="advisor" value="พลเอกนายแพทย์ด็อกเตอร์ศาสตราจารย์ก้องภพ เรือนแพ" disabled>
+            </div>
+
+            <div class="form-section">
+                <h2>รายละเอียดการจอง (Reservation Details)</h2>
+                <label for="reservationLab">แผนกห้องปฏิบัติการ (Reservation Lab):</label>
+                <input type="text" id="reservationLab" name="reservationLab" value="ห้องปฏิบัติการเคมี (Chemical Science Laboratory)" disabled>
+
+                <label for="roomNumber">เลขห้อง (Room no.):</label>
+                <input type="text" id="roomNumber" name="roomNumber" value="S3 401" disabled>
+
+                <label for="reservedEquipment">ระบุอุปกรณ์ที่จองไว้ (Specify the reserved equipment):</label>
+                <input type="text" id="reservedEquipment" name="reservedEquipment" value="-" disabled>
+                <h3>วันที่จอง (Reservation Date)</h3>
+                <div class="reservation-time">
+                    <label for="startDate">วันที่ (Date):</label>
+                    <input type="text" id="startDate" name="startDate" value="20/08/2567" disabled>
+
+                    <label for="endDate">ถึง (To):</label>
+                    <input type="text" id="endDate" name="endDate" value="22/08/2567" disabled>
+
+                    <label for="startTime">เวลา (Time):</label>
+                    <input type="time" id="startTime" name="startTime" value="13:00" disabled>
+
+                    <label for="endTime">ถึง (To):</label>
+                    <input type="time" id="endTime" name="endTime" value="19:00" disabled>
+                </div>
+            </div>
+
+            <div class="button-section">
+                <button type="button" class="save-button" onclick="toggleEdit()">แก้ไข (Edit)</button>
+                <button type="reset" class="cancel-button">ยกเลิก (Cancel)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/Record2.js"></script>
+</body>
+</html>

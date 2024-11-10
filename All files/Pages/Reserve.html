@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Requisition Form</title>
+    <link rel="stylesheet" href="../css/Reserve.css">
+</head>
+<body>
+    <!-- Top Bar Section -->
+    <div class="top-bar">
+        <span class="title">จองห้อง (Booking)</span>
+    </div>
+
+    <!-- Sidebar with taskbar -->
+    <div class="sidebar" style="top: 50px;">
+        <div class="sidebar-item">
+            <a href="Menu.html">
+                <img src="../images/Menu.png" alt="Home Icon" class="icon">
+            </a>
+        </div>
+        <div class="sidebar-item active">
+            <a href="Available.html">
+                <img src="../images/search.png" alt="Search Icon" class="icon">
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Reserve.html">
+                <img src="../images/Reserve.png" alt="Add Icon" class="icon">
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Record.html">
+                <img src="../images/Archive.png" alt="Archive Icon" class="icon">
+            </a>
+        </div>
+        <div class="sidebar-item">
+            <a href="Approval.html">
+                <img src="../images/Approval.png" alt="Check Icon" class="icon">
+            </a>
+        </div>
+        <div class="sidebar-item bottom">
+            <a href="../Index.html">
+                <img src="../images/logout.png" alt="Sign-out Icon" class="icon" >
+            </a>
+        </div>
+    </div>
+    
+    
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content">
+            <div class="form-section">
+                <h2>แบบฟอร์มขอใช้ห้องปฏิบัติการนอกเวลาราชการ (Laboratory requisition form in non-working hours.)</h2>
+                <label for="studentID">รหัสนักศึกษา/รหัสพนักงาน (Student/Staff ID):</label>
+                <input type="text" id="studentID" name="studentID" required>
+
+                <label for="name">ชื่อ-นามสกุล (Name-Surname):</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">หมายเลขติดต่อ (Phone number):</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="department">หน่วยงาน (School/Department):</label>
+                <input type="text" id="department" name="department" required>
+            </div>
+
+            <div class="form-section">
+                <h2>ผู้ใช้บริการเพิ่มเติม (Additional Clients)</h2>
+                <div class="client-row">
+                    <label for="clientID">ID:</label>
+                    <input type="text" id="clientID" name="clientID">
+
+                    <label for="clientName">ชื่อ (Name):</label>
+                    <input type="text" id="clientName" name="clientName">
+
+                    <button class="add-client">Add</button>
+                    <button class="delete-client">Delete</button>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>ความประสงค์ในการใช้ห้องปฏิบัติการ (Request to use laboratory for...)</h2>
+                <label for="purpose">ความประสงค์ (Purpose):</label>
+                <select id="purpose" name="purpose">
+                    <option value="">เลือกความประสงค์ (Choose purpose)</option>
+                </select>
+
+                <label for="topic">หัวข้อ (Topic):</label>
+                <input type="text" id="topic" name="topic">
+
+                <label for="advisor">อาจารย์ที่ปรึกษา (Advisor/Lecturer):</label>
+                <select id="advisor" name="advisor">
+                    <option value="">เลือกอาจารย์ (Select Advisor)</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <h2>รายละเอียดการจอง (Reservation Details)</h2>
+                <label for="reservationLab">แผนกห้องปฏิบัติการ (Reservation Lab):</label>
+                <select id="reservationLab" name="reservationLab">
+                    <option value="">เลือกแผนก (Select department)</option>
+                </select>
+
+                <label for="roomNumber">เลขห้อง (Room no.):</label>
+                <select id="roomNumber" name="roomNumber">
+                    <option value="">เลือกห้อง (Select Room)</option>
+                </select>
+
+                <label for="reservedEquipment">ระบุอุปกรณ์ที่จองไว้ (Specify the reserved equipment):</label>
+                <textarea id="reservedEquipment" name="reservedEquipment"></textarea>
+
+                <h3>วันที่จอง (Reservation Date)</h3>
+                <div class="reservation-time">
+                    <label for="startDate">วันที่ (Date):</label>
+                    <input type="date" id="startDate" name="startDate">
+
+                    <label for="endDate">ถึง (To):</label>
+                    <input type="date" id="endDate" name="endDate">
+
+                    <label for="startTime">เวลา (Time):</label>
+                    <input type="time" id="startTime" name="startTime">
+
+                    <label for="endTime">ถึง (To):</label>
+                    <input type="time" id="endTime" name="endTime">
+                </div>
+            </div>
+
+            <div class="button-section">
+                <button type="submit" class="save-button">บันทึก (Save)</button>
+                <button type="reset" class="cancel-button">ยกเลิก (Cancel)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/Reserve.js"></script>
+</body>
+</html>

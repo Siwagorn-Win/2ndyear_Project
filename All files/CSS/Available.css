@@ -1,0 +1,175 @@
+/* Reset and General Styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0dfc4;
+    color: #3d1b00;
+    margin: 0;
+}
+
+/* Header styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6a1b09; /* Adjust to match the background color */
+    padding: 15px 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-size: 24px;
+}
+/* Filter section */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6B1B1B;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 80px auto 20px auto;
+    width: 1699px;
+    height: 194px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    margin: 0 10px;
+}
+
+.form-group label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 1em;
+}
+
+.form-group input[type="text"] {
+    width: 200px;
+}
+
+.form-group input::placeholder {
+    color: #B3B3B3;
+}
+
+/* Sidebar container */
+.sidebar {
+    width: 60px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 700px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Sidebar item styling */
+.sidebar-item {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Icon size */
+.sidebar-item img {
+    width: 24px; 
+    height: 24px;
+}
+
+/* Bottom item (bell icon) alignment */
+.sidebar-item.bottom {
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+/* Room list styling */
+.room-list {
+    margin: 80px auto 20px auto; 
+    width: 80%;
+    max-width: 600px;
+    padding-left: 60px; 
+}
+
+.room-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.room-card .room-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #d32f2f;
+    flex-basis: 15%;
+    text-align: center;
+}
+
+.room-card .room-details {
+    flex-basis: 65%;
+}
+
+.room-card .room-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.room-card .status {
+    flex-basis: 20%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.status.in-use {
+    background-color: #e74c3c;
+}
+
+.status.process {
+    background-color: #f1c40f;
+}
+
+.status.free {
+    background-color: #2ecc71;
+}
+.input-wrapper {
+    position: relative;
+}
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* or any other width you prefer */
+    height: 20px; /* or any other height you prefer */
+}

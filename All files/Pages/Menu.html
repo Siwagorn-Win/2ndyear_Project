@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Booking System</title>
+    <link rel="stylesheet" href="../css/Menu.css">
+</head>
+<body>
+    <header>
+        <div class="header-title">หน้าหลัก(Home)</div>
+        
+    </header>
+
+    <section class="description">
+        <p>ระบบขอใช้ห้องปฏิบัติการบอกเวลาราชการศูนย์เครื่องมือวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยแม่ฟ้าหลวง<br>(MFU Lab Booking System)</p>
+    </section>
+    
+    <section class="buttons-section">
+        <div class="button-box" onclick="navigateTo('Reserve.html')">
+            <img src="../images/reserve.png" alt="Reserve Room Icon" class="icon-image" />
+            <p>จองห้อง <br> (Reserve room)</p>
+        </div>
+        <div class="button-box" onclick="navigateTo('Available.html')">
+            <img src="..\images\Search.png" alt="Available Room Icon" class="icon-image" />
+            <p>ตรวจสอบห้องว่าง <br> (Available room)</p>
+        </div>
+        <div class="button-box" onclick="navigateTo('Record.html')">
+            <img src="..\images\Archive.png" alt="Booking Record Icon" class="icon-image" />
+            <p>ประวัติการจอง <br> (Booking record)</p>
+        </div>
+        <div class="button-box" onclick="navigateTo('Approval.html')">
+            <img src="..\images\Approval.png" alt="Approval Form Icon" class="icon-image" />
+            <p>อนุมัติการจอง <br> (Approval form)</p>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="footer-notes">
+            <p>หมายเหตุ Notes</p>
+    <p>(1) ผู้ขอใช้ห้องปฎิบัติการต้องแสดงบัตรประจำตัวนักศึกษา บัตรประชาชน หรือบัตรที่สามารถแสดงตนต่อเจ้าหน้าที่รักษาความปลอดภัย และลงชื่อก่อนและหลังเข้าอาคารทุกครั้ง</p>
+    <p>(User(s) must show their ID card to the security guard and sign their name before entering and after leaving the building)</p>
+    <p>(2)ผู้ขอใช้ห้องปฎิบัติการจะต้องรักษาทรัพท์สินนของมหาวิทยาลัยแม่ฟ้าหลวง (User(s) must take good care of university property)</p>
+    <p>(3)ผู้ขอใช้ห้องปฎิบัติการยินยอมที่จะรับผิดชอบความเสียหายที่อาจจะเกิดขึ้นในช่วงเวลาที่ได้รับอนุญาติให้ใช้ห้องปฎิบัติการนั้นๆ</p>
+    <p>(User(s) hereby, will be responsible for any damages and loss that may occur during the requested lab use, User(s) will have to pay for lost and/or broken items.)
+    </p>
+    <p>(4)กำหนดให้ส่งแบบฟอร์มที่ฝ่ายเลขานุการและธุรการ ในวันทำการก่อนเวลา 12.00 น.</p>
+    <p>(The form must be submitted to the secretary during working hours and before 12.00hrs.)</p>
+        </div>
+    </footer>
+
+    <script src="../javascript/Menu.js"></script>
+</body>
+</html>
